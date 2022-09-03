@@ -12,10 +12,10 @@ function App() {
  <Box>
   <Navbar/>
   <Routes>
-    <Route path="/" component={<Feed/>}/>
-    <Route path="/video/:id" component={<VideoDetail/>}/>
-    <Route path="/channel/:id" component={<ChannelDetail/>}/>
-    <Route path="/search/:searchTerm" component={<SearchFeed/>}/>
+    <Route exact  path="/" element={<Feed/>}/>
+    <Route path="/video/:id" element={<VideoDetail/>}/>
+    <Route path="/channel/:id" element={<ChannelDetail/>}/>
+    <Route path="/search/:searchTerm" element={<SearchFeed/>}/>
 
   </Routes>
  </Box>
